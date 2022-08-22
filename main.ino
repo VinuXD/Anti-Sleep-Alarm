@@ -9,8 +9,8 @@ void setup() {
 
 void loop() {
 restart: // restart: flag to start the program again
-  for (int i = 1; i <= 1000; i++) { // To check if the user presses the button in 10 seconds delay
-    delay(10); // for loop's 1000 and delay's 10 => 1000 * 10 = 10 Seconds
+  for (int i = 1; i <= 20; i++) { // To check if the user presses the button in 10 seconds delay
+    delay(500); // for loop's 20 and delay's 500 milliseconds => 20 * 500 = 10 Seconds
     if (digitalRead(button) == 1) // checking the button's value
       goto restart; // Going back to restart the countdown
   }
